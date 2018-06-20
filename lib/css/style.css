@@ -50,19 +50,17 @@ header p{
 .card{
     width:500px;
     padding: 25px;
-    border-left: solid 1px var(--accent);
-    border-right: solid 1px var(--accent);
-    border-top:solid 1px transparent;
-    border-bottom:solid 1px transparent;
-    margin-left: 15px;
-    margin-right: 15px;
+    border: solid 3px var(--light);
+    margin: 15px;
     box-sizing: border-box;
-    transition: border 500ms;
+    transition: 
+        border 500ms,
+        box-shadow 500ms;
 }
 
 .card:hover{
-    border-top:solid 1px var(--accent);
-    border-bottom:solid 1px var(--accent);
+    border: solid 3px var(--accent);
+    box-shadow: 5px 5px 20px -3px var(--accent);
 }
 
 footer{
@@ -74,4 +72,15 @@ footer{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+@media(max-width: 1030px){
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        flex: 1 0 auto;
+    }
 }
