@@ -84,3 +84,14 @@ footer{
         flex: 1 0 auto;
     }
 }
+
+@media(max-width: 530px){
+    .card{
+        width:80%;
+    }
+
+    .card img{
+        width:80%;
+        height: initial;
+    }
+}
