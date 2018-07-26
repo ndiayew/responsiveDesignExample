@@ -1,77 +1,121 @@
-@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Coda');
-/* font-family: 'Advent Pro', sans-serif; */
-/* font-family: 'Coda', cursive; */
-
-/* https://coolors.co/eae8ff-d8d5db-adacb5-2d3142-b0d7ff */
-:root{
-    --primary:#EAE8FF;
-    --primaryDark:#2D3142;
-    --light:#D8D5DB;
-    --accent:#B0D7FF;
-}
-
-body{
-    margin:0;
-    background-color:var(--primaryDark);
-    color:var(--light);
-    text-align: center;
-    display:flex;
-    flex-direction: column;
-    height:100vh;
-}
-
-h1,h2{
-    font-family: 'Coda', cursive;
-}
-
-p{
-    font-family: 'Advent Pro', sans-serif;
-}
-
-header h1{
-    font-size: 40px;
-}
-
-header p{
-    font-size: 25px;
-}
-
-.card-container{
+html{
+    background-color:rgb(126, 126, 126);
     display: flex;
+    
+}
+
+@media(max-width: 1030px){
+    .game{
+        flex-direction:column;
+        align-items: center;
+    }
+}
+
+
+.main-container {
+    display: flex;
+} 
+
+.logo {
+    font-size: 55px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #333;
+    border: solid 3px goldenrod;
+    margin: auto; 
+    background-color:goldenrod;    
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
+/* navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 1200px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
     flex-direction: row;
-    justify-content: space-evenly;
 }
 
-.card img{
-    height:300px;
-    width:300px;
+li a:hover {
+    background-color: goldenrod;
+    color: #333;
 }
 
-.card{
-    width:500px;
-    padding: 25px;
-    border-left: solid 1px var(--accent);
-    border-right: solid 1px var(--accent);
-    border-top:solid 1px transparent;
-    border-bottom:solid 1px transparent;
-    margin-left: 15px;
-    margin-right: 15px;
-    box-sizing: border-box;
-    transition: border 500ms;
+h1{
+
+text-transform: uppercase;
+font-size: 23px;
+color:red;
+border: solid 10px violet;
+margin: auto; 
+width: 100%;
+background-color:black;
+text-align: left;
+float: left
+
 }
 
-.card:hover{
-    border-top:solid 1px var(--accent);
-    border-bottom:solid 1px var(--accent);
+h2{
+
+font-size: 50px;
+color:rgb(66, 18, 29);
+border: dotted 5px green;
+
+width: 30%;
+background-color: goldenrod;
+text-align: center;
+float: left;
+
 }
 
-footer{
-    margin-top: 50px;
-    background-color: var(--primary);
-    color: var(--primaryDark);
-    width: 100%;
-    flex: 1;
-    display:flex;
-    justify-content: center;
+#f{
+    text-align: center;
+    color:rgb(66, 18, 29);
+    border: dotted 5px green;
+    font-size: 35px;
+
+    background-color: goldenrod;
+}
+    /* content */
+.pop_content {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+}
+#u{
+    width: 950px;
+    float: right;
+}
+
+#s{
+    height: 200px;
+    width: 25%
+}
+.game{
+
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    margin: auto;
+   
+
+}
+#w{
+    font-size: 20px;
+    text-align: center
 }
